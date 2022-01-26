@@ -1,0 +1,83 @@
+.navbar-custom {
+    padding: 0;
+    border-top: 2px solid $g-color;
+    @include res(m768) {
+        background: #fff;
+        .nav-item {
+            margin: 10px!important;
+            .nav-link {
+                position: relative;
+                line-height: 10px!important;
+                height: 30px!important;
+                text-align: left!important;
+                display: inline!important;
+            }
+        }
+    }
+    img {
+        height: 60px;
+        width: 60px;
+    }
+    .navbar-toggler {
+        &:focus {
+            outline: none;
+        }
+    }
+    .navbar-nav {
+        .nav-item {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+            .nav-link {
+                text-transform: uppercase;
+                color: $header-color;
+                position: relative;
+                display: block;
+                line-height: 75px;
+                height: 90px;
+                @include transition;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    height: 2px;
+                    width: 100%;
+                    background-color: $g-color;
+                    transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
+                    left: 0;
+                    bottom: 0;
+                    transform-origin: right;
+                    transform: scale(0, 1);
+                }
+                &:hover {
+                    &:before {
+                        transform-origin: left;
+                        transform: scale(1);
+                    }
+                }
+                &.active {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        height: 2px;
+                        width: 100%;
+                        background-color: $g-color;
+                        left: 0;
+                        bottom: 0;
+                        transform-origin: left;
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+    a.hire-btn {
+        padding: 6px 20px;
+    }
+    &.black {
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+        @include transition;
+    }
+}

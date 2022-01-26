@@ -1,0 +1,52 @@
+.about-menu {
+    text-align: center;
+    button {
+        width: 150px;
+        box-shadow: 0 1px 4px rgba(221, 221, 221, 0.53);
+        margin: 0 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        &:last-child {
+            margin-right: 0;
+        }
+        @include res(m992) {
+            margin-bottom: 20px;
+        }
+        &.active {
+            background: $g-color;
+            color: #fff;
+            &:hover {
+                color: #fff;
+            }
+        }
+        &:hover {
+            color: $g-color;
+            position: relative;
+            &:after {
+                content: '';
+                height: 3px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: $g-color;
+                @include transition;
+            }
+        }
+    }
+}
+
+.about-card {
+    box-shadow: 0 1px 4px rgba(221, 221, 221, 0.53);
+    .about-c-item {
+        padding: 50px;
+        h2 {
+            text-transform: capitalize;
+            color: $span-color;
+        }
+        p {
+            margin-top: 50px;
+        }
+    }
+}

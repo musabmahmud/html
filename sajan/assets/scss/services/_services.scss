@@ -1,0 +1,38 @@
+.service-area {
+    background-image: url(../images/ser-backgound.jpg);
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    .service-card {
+        box-shadow: 0 1px 4px rgba(221, 221, 221, 0.53);
+        border-radius: 5px;
+        background: #fff;
+        margin-bottom: 30px;
+        .ser-c-title {
+            padding: 30px;
+            text-align: center;
+            i {
+                font-size: 36px;
+                padding: 30px;
+                border-radius: 50%;
+                margin-bottom: 30px;
+                @include res(m768) {
+                    margin-bottom: 0;
+                }
+            }
+            h3 {
+                text-transform: uppercase;
+                color: $g-color;
+                margin-bottom: 30px;
+            }
+            span {
+                color: $gray;
+            }
+        }
+        &:hover {
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+            @include transition;
+        }
+    }
+}

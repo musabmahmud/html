@@ -1,0 +1,32 @@
+.about-area {
+    background: #F5F5F5;
+    .about-slider {
+        .aowl-item {
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
+            .aowl-caption {
+                p {
+                    line-height: 30px;
+                }
+            }
+            @include res(m768) {
+                img {
+                    margin: auto;
+                }
+                .aowl-caption {
+                    text-align: center;
+                    h3 {
+                        margin: 20px auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.progress-content {
+    margin: 20px auto;
+}

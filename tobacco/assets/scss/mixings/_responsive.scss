@@ -1,0 +1,31 @@
+/* 
+  Responsive Call = @include res(media){@contents;}
+  media = m1920, m1600, m1200, m992, m768, m576, m480, m320
+*/
+
+@mixin res($media) {
+  @if $media == m1920 {
+    @media only screen and (max-width: 1920px) { @content; }
+  }
+  @if $media == m1600 {
+    @media only screen and (max-width: 1600px) { @content; }
+  }
+  @else if $media == m1200 {
+    @media only screen and (max-width: 1200px) { @content; }
+  }
+  @else if $media == m992 {
+    @media only screen and (max-width: 992px) { @content; }
+  }
+  @else if $media == m768 {
+    @media only screen and (max-width: 768px) { @content; }
+  }
+  @else if $media == m576 {
+    @media only screen and (max-width: 576px) { @content; }
+  }
+  @else if $media == m480 {
+    @media only screen and (max-width: 480px) { @content; }
+  }
+  @else if $media == m320 {
+    @media only screen and (max-width: 320px) { @content; }
+  }
+}

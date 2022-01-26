@@ -1,0 +1,61 @@
+.reserve-area {
+    background: url('../images/reservation/reserve_bg.png');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    h1 {
+        color: #fff;
+    }
+    &::before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        background: #000;
+        top: 0;
+        left: 0;
+        opacity: .5;
+    }
+    input,
+    textarea {
+        width: 100%;
+        border-radius: 30px;
+        padding: 10px 25px;
+        background-color: transparent;
+        border: 2px solid $para;
+        color: #fff;
+        font-family: 'Poppins';
+        &::placeholder {
+            text-transform: capitalize;
+            color: #fff;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    select {
+        width: 100%;
+        background-color: transparent;
+        border: 2px solid $para;
+        color: #fff;
+        border-radius: 30px;
+        padding: 10px 25px;
+        font-family: 'Poppins';
+        option {
+            background-color: #000000;
+            border-radius: 50px;
+            font-family: 'Poppins';
+        }
+        &:focus {
+            outline: none!important;
+        }
+    }
+    textarea {
+        font-family: 'Poppins';
+        height: 70px;
+    }
+}

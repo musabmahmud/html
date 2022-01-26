@@ -1,0 +1,88 @@
+.navbar-custom {
+    padding: 0;
+    border-top: 2px solid $g-color;
+    margin: 0 auto;
+    background: #fff;
+    @include res(m768) {
+        display: none;
+    }
+    img {
+        height: 60px;
+        width: 60px;
+    }
+    .navbar-nav {
+        .nav-item {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+            .nav-link {
+                text-transform: uppercase;
+                color: #000000;
+                position: relative;
+                display: block;
+                line-height: 75px;
+                height: 90px;
+                @include transition;
+                font-family: 'Minion Pro Bold';
+                i{
+                    font-size: 22px;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    height: 2px;
+                    width: 100%;
+                    background-color: $g-color;
+                    transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
+                    left: 0;
+                    bottom: 0;
+                    transform-origin: right;
+                    transform: scale(0, 1);
+                }
+                &:hover {
+                    &:before {
+                        transform-origin: left;
+                        transform: scale(1);
+                    }
+                }
+                &.active {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        height: 2px;
+                        width: 100%;
+                        background-color: $g-color;
+                        left: 0;
+                        bottom: 0;
+                        transform-origin: left;
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+    a.hire-btn {
+        padding: 6px 20px;
+    }
+    &.black{
+        box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+    }
+}
+.fa-stack[data-count]:after{
+    position: absolute;
+    right: 0px;
+    top: -12px;
+    content: attr(data-count);
+    font-size: 12px;
+    padding: 7px;
+    border-radius: 50%;
+    line-height: .75em;
+    color: #fff;
+    background: $header-color;
+    text-align: center;
+    border: 1px solid;
+}
+.fa-circle {
+  color:#DF0000;
+}

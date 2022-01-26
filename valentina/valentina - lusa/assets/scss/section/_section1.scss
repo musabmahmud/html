@@ -1,0 +1,57 @@
+.custom-section {
+    padding: 100px 0;
+}
+.g-heading {
+    font-size: 48px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-family: 'Minion Pro Bold';
+    color: $g-color;
+    @include res(m768){
+        font-size: 36px;
+    }
+    @include res(m576){
+        font-size: 24px;
+    }
+}
+
+.g-btn {
+    background: #000;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform: perspective(1px) translateZ(0px);
+    transition-duration: 0.5s;
+    text-align: center;
+    z-index: 5;
+    @include res(m768) {
+        padding: 5px 10px;
+    }
+    &:before {
+        content: '';
+        background: rgba(255, 255, 255, 0.3);
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: scaleX(0);
+        border-radius: 50px;
+        transform-origin: 0 50% 0;
+        transition-duration: 0.5s;
+        transition-property: transform;
+        transition-timing-function: ease-out;
+        z-index: -5;
+    }
+    &:hover {
+        color: #fff;
+        &:before {
+            transform: scaleX(1);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        }
+    }
+}

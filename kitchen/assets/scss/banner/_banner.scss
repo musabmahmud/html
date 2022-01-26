@@ -1,0 +1,34 @@
+.banner-area {
+    background: url('../images/banner/2.png');
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #000000;
+        top: 0;
+        left: 0;
+        opacity: 40%;
+        z-index: 0;
+    }
+    .banner-content {
+        h1 {
+            color: #fff;
+            margin-top: 0px!important;
+        }
+        p {
+            color: #fff;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-top: 25px;
+        }
+    }
+}

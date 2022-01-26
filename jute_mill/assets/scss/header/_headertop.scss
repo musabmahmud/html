@@ -1,0 +1,58 @@
+.h_top_bar {
+    background-color: $bg-color;
+    font-size: 16px;
+    @include res(m768) {
+        padding-top: 60px;
+        border-bottom: 2px solid #fff;
+        text-align: left;
+    }
+    .h_top_contact {
+        display: inline-block;
+        a {
+            padding: 10px 0;
+            display: block;
+            color: #fff;
+            @include res(m768) {
+                text-align: left;
+            }
+        }
+        span {
+            margin-left: 5px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        &:hover {
+            a {
+                span {
+                    color: #000;
+                    @include transition;
+                }
+            }
+        }
+    }
+    .htc_right {
+        text-align: right;
+        @include res(m768) {
+            display: none;
+            text-align: center;
+        }
+        a {
+            display: inline-block;
+            background-color: #fff;
+            padding: 10px 15px;
+            margin-right: 16px;
+            @include res(m992) {
+                margin-right: 0px;
+            }
+            &:hover {
+                i {
+                    color: #000;
+                    @include transition;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

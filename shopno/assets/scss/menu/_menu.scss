@@ -1,0 +1,26 @@
+.menu-area {
+    .main-menu {
+        .menu-list {
+            text-align: right;
+            li {
+                display: inline-block;
+                position: relative;
+                padding: 30px 30px;
+                a {
+                    display: block;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-weight: 700;
+                    background: transparent;
+                }
+                @include res(m1200) {
+                    padding: 30px 15px;
+                }
+                @include res(m992) {
+                    padding: 30px 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.contact-area {
+    background: $back-color;
+    position: relative;
+    .contact-title {
+        h2 {
+            text-align: right;
+            &:after {
+                right: 0;
+            }
+            &:before {
+                right: 0;
+            }
+        }
+    }
+    .contact-info {
+        color: #000;
+        .c-adress {
+            font-weight: 700;
+            line-height: 30px;
+        }
+        .c-email,
+        .contact-no {
+            color: #000;
+            font-weight: 700;
+            display: block;
+            margin-top: 20px;
+        }
+    }
+    .social-icon {
+        text-align: right;
+        a {
+            display: inline-block;
+            margin-left: 10px;
+            &:first-child {
+                margin-left: 0;
+            }
+            i {
+                color: #000;
+                &:hover {
+                    transform: rotate(360deg);
+                    transition: all ease-in-out .6s;
+                }
+            }
+        }
+    }
+    .con-map {
+        .map {
+            display: block;
+            height: 400px;
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+}

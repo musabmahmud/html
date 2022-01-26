@@ -1,0 +1,30 @@
+.custom-section {
+    padding: 100px 0;
+    .cus-sec-head {
+        text-transform: capitalize;
+        text-align: center;
+        h1 {
+            font-size: 48px;
+            position: relative;
+            padding-bottom: 15px;
+            span {
+                color: $g-color;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 120px;
+                height: 3px;
+                background: $g-color;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        p {
+            color: $gray;
+            margin: 50px auto;
+            max-width: 600px;
+        }
+    }
+}

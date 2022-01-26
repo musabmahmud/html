@@ -1,0 +1,16 @@
+.contact-form {
+    padding: 40px;
+    .form-field {
+        margin-bottom: 25px;
+        background: transparent;
+        input,
+        textarea {
+            width: 100%;
+            border: 2px solid $gray;
+            padding: 10px 20px;
+        }
+    }
+    .contact-btn {
+        padding: 10px 30px;
+    }
+}

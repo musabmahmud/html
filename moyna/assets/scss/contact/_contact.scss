@@ -1,0 +1,21 @@
+.contact-info {
+    background: $back-color;
+    .con-info-card {
+        text-align: center;
+        @include res(m768) {
+            margin-bottom: 50px;
+        }
+        i {
+            font-size: 36px;
+            background: rgba(91, 188, 46, 0.25);
+            padding: 30px;
+            border-radius: 50%;
+            color: $g-color;
+        }
+        h5 {
+            text-transform: capitalize;
+            margin: 20px auto;
+        }
+        span {}
+    }
+}

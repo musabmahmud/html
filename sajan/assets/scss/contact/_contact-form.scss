@@ -1,0 +1,19 @@
+.contact-form {
+    input {
+        border: 0;
+        background: none;
+        border-bottom: solid 1px #000;
+        width: 100%;
+        font-size: 14px;
+        line-height: 45px;
+    }
+    textarea {
+        display: block;
+        border: 0;
+        background: none;
+        border-bottom: solid 1px #000;
+        width: 100%;
+        color: #000;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,36 @@
+.about-title {
+    h2 {
+        &:after {
+            left: 0;
+        }
+        &:before {
+            left: 0;
+        }
+    }
+    p {
+        line-height: 30px;
+    }
+}
+
+.progress-caption {
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15px;
+    .pb-label {
+        position: absolute;
+        left: 0;
+    }
+    .pb-percent {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.progress {
+    margin-top: 50px;
+    .progress-bar {
+        background-color: $g-color;
+    }
+}

@@ -1,0 +1,84 @@
+.menu-logo-1 {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    .mlogo-title {
+        display: inline-block;
+        font-weight: 900;
+        font-size: 110%;
+        position: relative;
+        font-family: 'Comic Neue', cursive;
+        top: 30px;
+        font-size: 24px;
+        color: #000;
+        text-transform: capitalize;
+        left: 20px;
+    }
+}
+
+.menu-logo-2 {
+    margin-top: 5px;
+    text-align: right;
+    @include res(m768) {
+        display: none;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.menu-area {
+    background-color: $bg-color;
+    @include res(m768) {
+        display: none;
+    }
+    .large-menu {
+        .menu-list {
+            li {
+                display: inline-block;
+                position: relative;
+                a {
+                    display: block;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-weight: 700;
+                    padding: 20px 30px;
+                    background: transparent;
+                    &:hover {
+                        color: #000;
+                        @include transition;
+                    }
+                    &.active {
+                        color: #000;
+                    }
+                    i {
+                        font-size: 24px;
+                    }
+                    @include res(m992) {
+                        padding: 20px 15px;
+                    }
+                }
+            }
+        }
+    }
+    &.sticky-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 9999;
+        box-shadow: 3px 3px 5px #535353;
+        animation: mymove 0.3s ease-in-out;
+        @keyframes mymove {
+            from {
+                top: -10px;
+            }
+            to {
+                top: 0px;
+            }
+        }
+    }
+}

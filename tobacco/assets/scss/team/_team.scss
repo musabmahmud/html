@@ -1,0 +1,29 @@
+.messege-option {
+    .msg-item {
+        padding: 50px 0;
+        img {
+            max-width: 100%;
+        }
+        .msgc-body {
+            padding: 20px 10px;
+            .msg-person {
+                color: $head-color;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+            .msgc-title {
+                text-transform: uppercase;
+                margin: 20px 0;
+                color: #000;
+                font-size: 36px;
+            }
+            .msgc-text {
+                letter-spacing: 2px;
+                word-spacing: 5px;
+            }
+            .msgc-link {
+                margin-top: 30px;
+            }
+        }
+    }
+}

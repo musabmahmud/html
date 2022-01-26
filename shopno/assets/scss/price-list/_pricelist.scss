@@ -1,0 +1,69 @@
+.pricing-area {
+    background: #F3F3F3;
+    .pricing-content {
+        position: relative;
+        .pr-card {
+            background: #f8f8f8;
+            border-radius: 5px;
+            padding: 45px 0;
+            text-align: center;
+            position: relative;
+            z-index: 0;
+            transition: all 0.5s ease 0s;
+            .price {
+                position: absolute;
+                top: -60px;
+                left: 50%;
+                width: 120px;
+                height: 120px;
+                transform: translateX(-50%);
+                background: #000;
+                z-index: 999;
+                border-radius: 50%;
+                border: 5px solid #fff;
+                color: #fff;
+                padding: 35px 0;
+                .dollar-icon {
+                    font-size: 20px;
+                    font-weight: 500;
+                    position: relative;
+                    top: -17px;
+                }
+                .currency {
+                    font-size: 40px;
+                    font-weight: 600;
+                    line-height: 40px;
+                }
+            }
+            h3 {
+                margin: 30px 0;
+            }
+            .pr-list {
+                margin: 0 10px;
+                padding: 30px;
+                background: #fff;
+                li {
+                    line-height: 36px;
+                    &:nth-child(odd) {
+                        background: #f8f8f8;
+                    }
+                    &:nth-child(even) {
+                        background: #fff;
+                    }
+                }
+            }
+            .pr-btn {
+                padding: 10px 20px;
+                i {
+                    color: #fff;
+                }
+            }
+            &.active {
+                background: #000;
+                h3 {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

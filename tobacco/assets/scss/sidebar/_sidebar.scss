@@ -1,0 +1,67 @@
+.fright-bar {
+    box-shadow: 3px 3px 5px #535353;
+    padding: 10px;
+    @include res(m768) {
+        display: none;
+        box-shadow: none;
+    }
+    .frbar-content {
+        @include res(m768) {
+            display: none;
+        }
+        .search-bar {
+            padding: 10px;
+            display: inline-block;
+            input[type=text] {
+                width: 80%;
+                padding: 6px;
+                font-size: 17px;
+                margin-right: 5px;
+                border: none;
+                border-bottom: 1px dotted $gray;
+            }
+            button {
+                padding: 8px;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+    .latest-news {
+        height: 2500px;
+        overflow: auto;
+        padding: 10px;
+        h3 {
+            background-color: $bg-color;
+            padding: 20px 10px;
+            margin-bottom: 20px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .lnews-item {
+            margin-bottom: 30px;
+            border-bottom: #e1e6ed 1px solid;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            a {
+                img {
+                    height: 200px;
+                    width: 100%;
+                }
+                span {
+                    display: block;
+                    padding: 15px 0;
+                    color: #000;
+                }
+                &:hover {
+                    span {
+                        color: $gray;
+                        @include transition;
+                    }
+                }
+            }
+        }
+    }
+}

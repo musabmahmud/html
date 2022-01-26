@@ -1,0 +1,22 @@
+.owl-custom-theme {
+    .owl-client-icon {
+        i {
+            color: red;
+        }
+    }
+    .client-img {
+        max-width: 300px;
+        max-height: 300px;
+        border-radius: 50%;
+        margin: 20px auto;
+    }
+    p {
+        max-width: 500px;
+        margin: 20px auto;
+        span {
+            color: red;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}

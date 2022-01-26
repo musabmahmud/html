@@ -1,0 +1,75 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
+    }
+    &:focus {
+        text-decoration: none;
+        border: none;
+        outline: none;
+    }
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 900;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+input {
+    box-shadow: none;
+    border-radius: 0;
+    outline: none;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    &:active {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+textarea {
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    &:active {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.fix {
+    overflow: hidden;
+}

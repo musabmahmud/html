@@ -1,0 +1,217 @@
+/**======================================================================
+=========================================================================
+Template Name: Website Template of Deliciosa Resturant
+Author: Md Musab Mahmud
+supports: 
+File: style.css
+=========================================================================
+=========================================================================
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+    2. Header area start here
+    3. Slider area start here
+    4. About area start here
+    5. Breadcumb area start here
+    6. Banner area start here
+    7. Services area start here
+    8. Team area start here
+    9. Price list area start here
+    10. Pagination area start here
+    11. Sidebar area start here
+    12. Products area start here
+    13. Testimonial area start here
+    14. Client area start here
+    15. Form area start here
+    16. Social link area start here
+    17. Blog area start here
+    18. Faq area start here
+    19. Contact area start here
+    20. Footer area start here
+    21. Gallery area start here
+
+
+
+---------------------------------------*/
+
+
+/*....................................
+1.Theme default CSS
+....................................*/
+
+
+/*....................................
+1.2. Event area start here
+....................................*/
+
+@import "mixins/mixins";
+
+/* ....................................
+1.1 Reset CSS 
+.......................................*/
+
+@import "defaults/_defaults.scss";
+
+/*....................................
+3. Core area start here
+....................................*/
+
+@import "core/_con.scss";
+
+/*....................................
+2. Header area start here
+....................................*/
+
+@import "header/_con.scss";
+
+/*....................................
+3. Slider area start here
+....................................*/
+
+@import "slider/slider";
+
+/*....................................
+4. Section area start here
+....................................*/
+
+@import "section/_con.scss";
+
+/*....................................
+5. About area start here
+....................................*/
+
+@import "about/about";
+
+/*....................................
+. Menu area start here
+....................................*/
+
+@import "menu/menu";
+
+/*....................................
+7. Banner area start here
+....................................*/
+
+@import "reservation/reservation";
+
+/*....................................
+7. Services area start here
+....................................*/
+
+@import "services/services";
+
+/*....................................
+8. Team area start here
+....................................*/
+
+@import "team/team";
+
+/*....................................
+9. Price list area start here
+....................................*/
+
+@import "price-list/pricelist";
+
+/*....................................
+10. Pagination area start here
+....................................*/
+
+@import "pagination/pagination";
+
+/*....................................
+11. Sidebar area start here
+....................................*/
+
+@import "sidebar/sidebar";
+
+/*....................................
+12. Products area start here
+....................................*/
+
+@import "project/project";
+
+/*....................................
+13. Testimonial area start here
+....................................*/
+
+@import "testimonial/testimonial";
+
+/*....................................
+14. Client area start here
+....................................*/
+
+@import "client/client";
+
+/*....................................
+15. Form area start here
+....................................*/
+
+@import "form/form";
+
+/*....................................
+16. Social link area start here
+....................................*/
+
+@import "social_link/social";
+
+/*....................................
+17. Blog area start here
+....................................*/
+
+@import "blog/_con.scss";
+
+/*....................................
+12. Blog area start here
+....................................*/
+
+@import "whoweare/whoweare";
+
+/*....................................
+18. Faq area start here
+....................................*/
+
+@import "faq/faq";
+
+/*....................................
+18. Faq area start here
+....................................*/
+
+@import "news/news";
+
+/*....................................
+18. Faq area start here
+....................................*/
+
+@import "prayer/prayer";
+
+/*....................................
+18. Faq area start here
+....................................*/
+
+@import "sponsor/sponsors";
+
+/*...................................
+19. Contact area start here
+....................................*/
+
+@import "contact/_con.scss";
+
+/*....................................
+20. Footer area start here
+....................................*/
+
+@import "footer/_con.scss";
+
+/*....................................
+21. Gallery area start here
+....................................*/
+
+@import "gallery/gallery";
+
+/*....................................
+22. Event area start here
+....................................*/
+
+@import "event/event";

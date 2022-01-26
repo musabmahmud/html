@@ -1,0 +1,24 @@
+.footer {
+    text-align: center;
+    .footer-logo {
+        img {
+            width: 150px;
+        }
+    }
+    .footer-text,
+    .footer-copyright {
+        p {
+            font-family: 'Poppins';
+            color: $para;
+            text-transform: capitalize;
+            a {
+                display: inline-block;
+                color: #000;
+                &:hover {
+                    color: $header;
+                    @include transition;
+                }
+            }
+        }
+    }
+}

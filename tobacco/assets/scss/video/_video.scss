@@ -1,0 +1,33 @@
+.video-section {
+    padding: 50px 0;
+    .video-share {
+        margin-bottom: 30px;
+        a {
+            width: 25%;
+            float: left;
+            font-size: 18px;
+            height: 45px;
+            padding: 10px 0;
+            display: block;
+            text-align: center;
+            transition: all .3s ease-in-out;
+            color: #fff;
+            &.vshare-f {
+                background-color: #3b5998;
+            }
+            &.vshare-s {
+                background-color: #33bdfd;
+            }
+            &.vshare-t {
+                background-color: #737373;
+            }
+            &.vshare-forth {
+                background-color: #d2683a;
+            }
+            &:hover {
+                color: $gray;
+                @include transition;
+            }
+        }
+    }
+}

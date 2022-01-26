@@ -1,0 +1,139 @@
+body {
+    overflow: hidden;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 9999;
+    transition: all 0.5s ease-in-out;
+    font-weight: 400;
+    background-color: #292f36;
+    display: none;
+}
+
+.nav__list {
+    display: flex;
+    align-items: baseline;
+    text-transform: uppercase;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1em 0.5em;
+}
+
+.nav__item {
+    list-style-type: none;
+}
+
+.nav__link {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #f7faff;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.nav__link:hover {
+    color: #f7faff;
+}
+
+
+/* hamburger trigger */
+
+.nav__trigger {
+    display: none;
+    position: fixed;
+    width: 30px;
+    height: 25px;
+    right: 100px;
+    top: 50px;
+    z-index: 200;
+}
+
+.nav__icon {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 5px;
+    background-color: #f7faff;
+    transition-property: background-color, transform;
+    transition-duration: 0.5s;
+}
+
+.nav__icon:before,
+.nav__icon:after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    background: #f7faff;
+    transition-property: margin, transform;
+    transition-duration: 0.5s;
+}
+
+.nav__icon:before {
+    margin-top: -10px;
+}
+
+.nav__icon:after {
+    margin-top: 10px;
+}
+
+.nav__link {
+    transition-delay: 500ms;
+}
+
+.nav--active .nav__link {
+    opacity: 1;
+}
+
+.nav--active .nav {
+    transition: all 300ms ease-in-out;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.nav--active .nav__icon {
+    background: rgba(0, 0, 0, 0);
+}
+
+.nav--active .nav__icon:before {
+    margin-top: 0;
+    transform: rotate(45deg);
+}
+
+.nav--active .nav__icon:after {
+    margin-top: 0;
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .nav__trigger {
+        display: block;
+        top: 50px;
+        right: 30px;
+    }
+    .nav {
+        transform: translateX(-100%);
+        width: 70%;
+        height: 100%;
+        z-index: 99999;
+        opacity: 0;
+        overflow: scroll;
+        display: block;
+    }
+    .nav__item {
+        padding: 20px;
+    }
+    .nav__list {
+        margin: 0;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav__link {
+        opacity: 0;
+    }
+}

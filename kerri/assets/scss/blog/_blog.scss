@@ -1,0 +1,16 @@
+.blog-area {
+    .blog-post-item {
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        .b-c-title {
+            padding-bottom: 15px;
+            h5 {
+                margin: 20px auto;
+            }
+            span {
+                color: red;
+            }
+        }
+    }
+}

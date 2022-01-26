@@ -1,0 +1,32 @@
+.footer-area {
+    background: #000;
+    .footer-content {
+        color: #fff;
+        text-align: left;
+        text-transform: capitalize;
+        @include res(m768) {
+            text-align: center;
+        }
+    }
+    p {
+        margin-top: 20px;
+        line-height: 30px;
+        color: $back-color;
+    }
+    .social-icon {
+        text-align: center;
+        a {
+            i {
+                color: #fff;
+                padding: 10px;
+                &:hover {
+                    transform: rotate(360deg);
+                    @include transition;
+                    color: #000;
+                    background: $back-color;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

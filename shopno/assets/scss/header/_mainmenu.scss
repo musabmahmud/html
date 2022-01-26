@@ -1,0 +1,34 @@
+header {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    .menu-logo {
+        position: relative;
+        @include res(m768) {
+            position: fixed;
+        }
+        img {
+            height: 85px;
+        }
+        @include res(m768) {
+            width: 100px;
+            z-index: 9999;
+            img {
+                height: 60px;
+            }
+        }
+    }
+    &.sticky {
+        background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 999;
+        box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+        transition: all ease-in-out 1s;
+    }
+}

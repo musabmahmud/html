@@ -1,0 +1,28 @@
+.contact-form {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    box-shadow: 0 10px 40px 5px rgba(0, 0, 0, 0.05);
+    .form-field {
+        margin-bottom: 25px;
+        background: transparent;
+        input,
+        textarea {
+            width: 100%;
+            border: 2px solid $back-color;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+    }
+    .form-button {
+        text-align: center;
+        margin: auto;
+        button {
+            border: 0;
+            display: inline;
+            text-align: center;
+            padding: 10px 20px;
+        }
+    }
+}

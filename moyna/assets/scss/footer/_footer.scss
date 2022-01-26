@@ -1,0 +1,61 @@
+.footer-area {
+    background: #000;
+    .footer-sec {
+        text-transform: uppercase;
+        &.footer-icon {
+            img {
+                width: 100px!important;
+            }
+        }
+        h5 {
+            color: #FFF;
+            margin-bottom: 50px;
+        }
+        ul {
+            li {
+                margin-bottom: 20px;
+                a {
+                    color: $gray;
+                    @include transition;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding-bottom: 20px;
+        p {
+            text-transform: capitalize;
+            color: $gray;
+            a {
+                color: $gray;
+                @include transition;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+        .footer-icon {
+            text-align: right;
+            @include res(m768) {
+                text-align: left;
+                margin-top: 20px;
+            }
+            a {
+                margin: 0 10px;
+                i {
+                    color: $gray;
+                    &:hover {
+                        color: #fff;
+                        @include transition;
+                    }
+                }
+            }
+        }
+    }
+}

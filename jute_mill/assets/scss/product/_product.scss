@@ -1,0 +1,29 @@
+.product-area {
+    .product-item {
+        margin: 25px 0;
+        .product-img {
+            img {
+                width: 100%;
+            }
+            margin-bottom: 20px;
+        }
+        h3 {
+            text-transform: uppercase;
+            span {
+                display: block;
+                margin-top: 5px;
+                color: $gray;
+                font-weight: 300;
+                text-transform: capitalize;
+            }
+        }
+        p {
+            font-family: 'Raleway', sans-serif;
+            display: block;
+            margin-top: 20px;
+            color: $gray;
+            text-transform: capitalize;
+            text-align: justify;
+        }
+    }
+}

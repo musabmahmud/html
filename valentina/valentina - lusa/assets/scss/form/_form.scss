@@ -1,0 +1,52 @@
+.form-area {
+    background-color: $back-color;
+}
+.frage-padding{
+    padding: 100px;
+    @include res(m576){
+        padding: 20px; 
+    }
+}
+
+.form-item {
+    margin: 0 auto;
+    background: #fff;
+    .form-heading {
+        color: $g-color;
+        text-align: center;
+    }
+    .form-option {
+        table {
+            width: 100%;
+            tr {
+                &.form-overflow{
+                    @include res(m768){
+                        display: none;
+                    }
+                }
+                td {
+                    padding-top: 20px;
+                    .form-input {
+                        border-radius: 5px;
+                        width: 100%;
+                        &.input-width {
+                            width: 90px;
+                        }
+                    }
+                }
+            }
+        }
+        .form-button {
+            text-transform: capitalize;
+            padding: 10px 30px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            color: #fff;
+            background: #000000;
+            &:hover {
+                background: $g-color;
+                transition: .5s all ease-in-out;
+            }
+        }
+    }
+}

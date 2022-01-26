@@ -1,0 +1,99 @@
+.menu-area {
+    display: flex;
+    background-color: #fff;
+    @include res(m768) {
+        display: none;
+    }
+    .lmenu-logo {
+        width: 25%;
+        @include res(m992) {
+            width: 20%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .large-menu {
+        width: 75%;
+        .menu-list {
+            text-align: right;
+            li {
+                display: inline-block;
+                margin-right: 5px;
+                @include res(m992) {
+                    margin-right: 0px;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    font-family: 'Varela Round', sans-serif;
+                    text-transform: uppercase;
+                    color: #000;
+                    position: relative;
+                    display: block;
+                    padding: 30px 15px;
+                    font-weight: 600;
+                    @include transition;
+                    @include res(m992) {
+                        padding: 25px 0px;
+                    }
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        height: 3px;
+                        width: 100%;
+                        background-color: $hover-color;
+                        transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
+                        left: 0;
+                        bottom: 0;
+                        transform-origin: right;
+                        transform: scale(0, 1);
+                    }
+                    &:hover {
+                        &:before {
+                            transform-origin: left;
+                            transform: scale(1);
+                        }
+                    }
+                    &.active {
+                        color: #fff;
+                        background-color: red;
+                    }
+                }
+            }
+        }
+    }
+    &.sticky-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 9999;
+        box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+        animation: mymove 0.1s ease-in-out;
+        padding: 0 20px;
+        @keyframes mymove {
+            from {
+                top: -10px;
+            }
+            to {
+                top: 0px;
+            }
+        }
+        overflow: hidden;
+        .lmenu-logo {
+            height: 60px;
+            img {
+                max-height: 100%;
+            }
+        }
+        .large-menu {
+            li {
+                a {
+                    padding: 20px 15px;
+                }
+            }
+        }
+    }
+}

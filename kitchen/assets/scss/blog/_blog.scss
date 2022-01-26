@@ -1,0 +1,27 @@
+.blog-area {
+    .blog-content {
+        img {
+            width: 100%;
+        }
+        .blog-conbody {
+            span {
+                text-transform: uppercase;
+                font-family: 'Poppins';
+                &.content-name {
+                    color: $header;
+                    margin-right: 10px;
+                }
+            }
+            h5 {
+                text-transform: capitalize;
+                font-family: 'Poppins';
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+            p {
+                color: $para;
+                font-family: 'Poppins';
+            }
+        }
+    }
+}

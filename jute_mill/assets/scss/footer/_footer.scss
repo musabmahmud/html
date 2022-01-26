@@ -1,0 +1,107 @@
+.footer-area {
+    background: url('../image/footer/1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    .footer-item {
+        color: #fff;
+        @include res(m768) {
+            margin: 10px 0;
+        }
+        .footer-para {
+            margin-top: 20px;
+        }
+        h4 {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+        span {
+            display: block;
+            margin-top: 25px;
+            font-weight: 300;
+            color: $border-color;
+            text-transform: capitalize;
+            text-align: justify;
+        }
+        ul {
+            li {
+                margin: 20px 0;
+                a {
+                    text-transform: capitalize!important;
+                    color: $border-color;
+                    &:hover {
+                        @include transition;
+                        color: $gray;
+                    }
+                    i {
+                        font-size: 6px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            &.footer-item-list {
+                .fil-item {
+                    text-transform: lowercase!important
+                }
+            }
+        }
+        .footer-share {
+            display: flex;
+            .fshare-icon {
+                i {
+                    font-size: 48px;
+                    margin-right: 5px;
+                    color: #fff;
+                }
+                .fshare-content {
+                    display: inline-block;
+                    font-weight: 700;
+                }
+                &:hover {
+                    i {
+                        transform: rotate(360deg);
+                        color: $gray;
+                        @include transition;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    background-color: #000;
+    padding: 25px 0;
+    .fbottom-left {
+        p {
+            color: $gray;
+            margin-right: 5px;
+        }
+    }
+    .fbottom-right {
+        ul {
+            text-align: right;
+            li {
+                display: inline-block;
+                a {
+                    color: #fff;
+                    margin-left: 30px;
+                    @include res(m768) {
+                        margin-left: 0;
+                        margin-right: 10px;
+                    }
+                    &:hover {
+                        color: $gray;
+                        @include transition;
+                    }
+                }
+            }
+            @include res(m768) {
+                text-align: left;
+            }
+        }
+    }
+}

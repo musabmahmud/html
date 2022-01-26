@@ -1,0 +1,63 @@
+.footer-area {
+    padding: 50px auto;
+    .footer-item {
+        h5 {
+            text-transform: uppercase;
+            color: #000;
+            margin-bottom: 50px;
+        }
+        ul {
+            li {
+                margin: 20px auto;
+                p {
+                    color: #000;
+                    span {
+                        color: gray;
+                        text-transform: capitalize;
+                    }
+                }
+                a {
+                    color: #000;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+            &.share-links {
+                li {
+                    display: inline-block;
+                    a {
+                        display: block;
+                        padding: 20px;
+                        border: 2px solid gray;
+                        @include res(m992) {
+                            padding: 15px;
+                        }
+                        i {
+                            font-size: 24px;
+                        }
+                    }
+                    &:hover {
+                        color: #fff;
+                        background: #000;
+                        transition: 1s;
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-end {
+    background: #000;
+    p {
+        color: grey;
+        a {
+            color: grey;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.section {
+    padding: 50px 0;
+    position: relative;
+    h1 {
+        text-transform: capitalize;
+    }
+    p.text-muted {
+        max-width: 500px;
+        margin: 20px auto;
+    }
+}

@@ -1,0 +1,70 @@
+.event-menu {
+    text-align: center;
+    .nav-item {
+        text-align: center;
+        margin: 0 auto;
+        .emenu-btn {
+            text-transform: capitalize;
+            color: #ffffff;
+            padding: 20px;
+            background-color: $before-color;
+            border-radius: 5px;
+            display: block;
+            @include res(m768) {
+                margin: 20px auto;
+            }
+            i {
+                margin-right: 5px;
+            }
+            &:hover {
+                color: #000000;
+                @include transition;
+            }
+            &.active {
+                color: #000;
+                background-color: #ffffff;
+                border: 1px solid $before-color;
+            }
+        }
+    }
+}
+
+.emenu-card {
+    width: 100%;
+    margin-top: 30px;
+    .emc-content {
+        height: 400px;
+        width: 100%;
+        padding: 0 10px;
+        overflow: auto;
+        .emcc-item {
+            border-bottom: 1px dotted $gray;
+            a {
+                color: #000000;
+                padding: 20px 0;
+                font-size: 20px;
+                display: inline-flex;
+                &:hover {
+                    color: $gray;
+                    @include transition;
+                }
+                i {
+                    font-size: 24px;
+                    margin-right: 20px;
+                    margin-top: 3px;
+                    color: $before-color;
+                }
+                .event-details {
+                    .event-heading {
+                        color: $before-color;
+                        font-weight: 500;
+                        font-size: 24px;
+                    }
+                    .event-para {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

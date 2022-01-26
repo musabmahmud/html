@@ -1,0 +1,48 @@
+.scanner-area {
+    .scanner-item {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 100px;
+        width: 600px;
+        @include res(m768){
+            width: 100%;
+            padding: 20px;
+        }
+        box-shadow: 0 2px 4px 1px rgb(185, 182, 182);
+        .scanner-content {
+            display: flex;
+            margin: 0 auto;
+            img {
+                border: 1px solid #000;
+                padding: 50px;
+                border-radius: 5px;
+                width: 400px;
+                height: 450px;
+                @include res(m768){
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        .scanner-c-icon {
+            font-size: 30px;
+            margin-top: 400px;
+            margin-left: 20px;
+        }
+    }
+    .scannedwith {
+        padding: 50px;
+        box-shadow: 0 2px 4px 1px rgb(185, 182, 182);
+        .sci-find {
+            border: 1px solid #000;
+            padding: 50px;
+            border-radius: 5px;
+            img {
+                max-width: 100%!important;
+                max-height: 100%!important;
+                border-radius: 5px;
+            }
+        }
+    }
+}

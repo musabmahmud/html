@@ -1,0 +1,162 @@
+.menu-area {
+    .sub-menu {
+        .nav-tabs {
+            padding-bottom: 60px;
+            li {
+                display: inline-block;
+                margin: auto;
+                display: block;
+                a {
+                    font-family: 'Playfair Display';
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-align: center;
+                    border: none;
+                    position: relative;
+                    display: block;
+                    color: $menu;
+                    img {
+                        width: 42px;
+                    }
+                    span {
+                        display: block;
+                        margin-top: 20px;
+                    }
+                    &.active {
+                        color: #000;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            border: 1px solid transparent;
+                            border-width: 12px;
+                            transform: translate(-10px, 62px);
+                            width: 0;
+                            border-bottom-color: #de4f41;
+                            border-width: 10px !important;
+                        }
+                        @include res(m576) {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        position: absolute;
+        height: 600px;
+        z-index: 99;
+        left: 0;
+        padding: 60px;
+        border-top: 3px solid $header;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.11);
+        @include res(m1200) {
+            overflow: scroll;
+        }
+        @include res(m576) {
+            padding: 5px;
+        }
+    }
+    .submenu-content {
+        display: flex;
+        margin: 20px auto;
+    }
+    .smc-img {
+        @include res(m576) {
+            text-align: center;
+        }
+        img {
+            height: 100px;
+            width: 100px;
+        }
+    }
+    .smc-right {
+        margin-left: 20px;
+        margin-top: 20px;
+        .smrc-head {
+            position: relative;
+            text-transform: uppercase;
+            font-family: 'Poppins';
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+                border-bottom: 1px dashed $menu;
+                z-index: 991;
+                width: 100%;
+            }
+            .smcr-name {
+                position: absolute;
+                text-align: left;
+                left: 0;
+                top: 0;
+                z-index: 992;
+                background-color: #fff;
+                color: #000;
+                font-weight: bold;
+                padding-right: 5px;
+            }
+            .smcr-price {
+                position: absolute;
+                text-align: right;
+                right: 0;
+                top: 0;
+                background-color: #fff;
+                z-index: 992;
+                color: $header;
+                padding-left: 5px;
+            }
+        }
+        .smrc-body {
+            position: relative;
+            margin-top: 30px;
+            text-transform: capitalize;
+            font-family: 'Poppins';
+            font-weight: normal;
+            text-align: left;
+            display: block;
+        }
+    }
+}
+
+.m-background {
+    background: url('../images/menu/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    .m-bgbefore {
+        width: 100%;
+        height: 100%;
+        .m-bg-left {
+            top: -100px;
+            left: 20px;
+            height: 100%;
+            position: absolute;
+        }
+        .m-bgbleft {
+            top: 550px;
+            height: 100%;
+            left: 20px;
+            position: absolute;
+        }
+        .m-bgbright {
+            top: 350px;
+            right: 0;
+            height: 100%;
+            position: absolute;
+            @include res(m480) {
+                display: none;
+            }
+        }
+    }
+}

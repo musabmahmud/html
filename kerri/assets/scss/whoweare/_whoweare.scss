@@ -1,0 +1,45 @@
+.who_we_are{
+    background-image: url('../images/whoweare/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    position: relative;
+    height: 880px;
+    box-shadow: 0px 5px 10px $gray;
+    @include res(m768){height: 100%;}
+    .w-w-r-l{
+        margin-top: 180px;
+        @include res(m768){margin: 100px 0;}
+        h1{
+            color: $header-color;
+            position: relative;
+            line-height: 52px;
+            &::after{
+                content: '';
+                width: 92px;
+                border-bottom: 1px solid $before-color;
+                height: 100%;
+                left: 0;
+                top: 30px;
+                position: absolute;
+            }
+        }
+        .w-w-r-c-1{
+                max-width: 350px;
+                font-size: 24px;
+                margin-top: 77px;
+                color: $span-color;
+                line-height: 37px;
+                font-weight: 300;
+                @include res(m480){font-size: 20px;}
+        }
+        
+        .w-w-r-c-2{
+            color: $gray;
+            font-size: 16px;
+            line-height: 25px;
+            margin-top: 20px;
+        }
+    }
+}

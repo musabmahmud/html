@@ -1,0 +1,40 @@
+.about {
+    .about-text {
+        h1 {
+            @include res(m992) {
+                margin: 20px 0;
+            }
+        }
+        h5 {
+            span {
+                color: red;
+            }
+        }
+    }
+    .about-footer {
+        margin: 20px 0;
+        ul {
+            display: flex;
+            li {
+                margin-right: 20px;
+                a {
+                    i {
+                        height: 40px;
+                        width: 40px;
+                        font-size: 20px;
+                        border-radius: 50%;
+                        border: 2px solid #d4d4d4;
+                        line-height: 38px;
+                        text-align: center;
+                        transition: all 0.5s;
+                        &:hover {
+                            color: #000;
+                            border-color: #000;
+                            transition: all 1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

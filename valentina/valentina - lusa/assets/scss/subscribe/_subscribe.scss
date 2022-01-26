@@ -1,0 +1,51 @@
+.improve-area {
+    background-image: url('../images/background/subscribe.png');
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    .improve-item {
+        span {
+            font-size: 30px;
+            color: #fff;
+            text-transform: capitalize;
+            word-spacing: 5px;
+            font-family: 'Minion Pro Bold';
+            @include res(m768) {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.subscribe-area {
+    background-image: url('../images/background/subscribe.png');
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    .sub-item {
+        p {
+            font-size: 24px;
+            color: #fff;
+            text-transform: capitalize;
+            word-spacing: 5px;
+            font-family: 'Minion Pro Bold';
+            @include res(m768) {
+                font-size: 20px;
+            }
+        }
+    }
+    .subscribe-button {
+        text-transform: capitalize;
+        padding: 10px 20px;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        color: #fff;
+        background: red;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,62 @@
+    .team-area {
+        background: #F3F3F3;
+        .team-item {
+            border: 1px solid #ddd;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+            .team-img {
+                position: relative;
+                .team-icon {
+                    background: #333;
+                    position: absolute;
+                    height: 100%;
+                    right: -40px;
+                    top: 0;
+                    transition: all ease .3s;
+                    ul {
+                        padding-top: 20px;
+                        @include res(m1200) {
+                            padding-top: 10px;
+                        }
+                        @include res(m992) {
+                            padding-top: 25px;
+                        }
+                        li {
+                            a {
+                                display: inline-block;
+                                font-size: 14px;
+                                height: 40px;
+                                line-height: 40px;
+                                text-align: center;
+                                transition: all 0.3s ease 0s;
+                                width: 40px;
+                                color: #fff;
+                                &:hover {
+                                    background: #fff;
+                                    color: #333;
+                                    @include transition;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .team-content {
+                h3 {
+                    margin: 20px auto;
+                    color: #333;
+                }
+                p {
+                    margin-bottom: 20px;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+                .team-icon {
+                    right: 0;
+                }
+            }
+        }
+    }

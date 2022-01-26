@@ -1,0 +1,55 @@
+.owl-cus-team {
+    @include res(m768) {
+        margin: 50px auto;
+    }
+    .team-card {
+        border: 1px solid $back-color;
+        border-radius: 5px;
+        .team-c-img {
+            position: relative;
+            img {
+                transition: all .25s cubic-bezier(0.43, 0.44, 0.63, 0.61);
+            }
+            &:hover {
+                cursor: pointer;
+                img {
+                    opacity: .6;
+                }
+            }
+        }
+        .team-c-icon {
+            background: $g-color;
+            padding: 15px 0;
+            text-align: center;
+            a {
+                i {
+                    color: #fff;
+                    margin: 0 4px;
+                    height: 26px;
+                    border: 1px solid rgba(255, 255, 255, 0.38);
+                    width: 26px;
+                    line-height: 24px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background: transparent;
+                    transition: all 0.25s cubic-bezier(0.43, 0.44, 0.63, 0.61);
+                    &:hover {
+                        background: #fff;
+                        color: $g-color;
+                        @include transition;
+                    }
+                }
+            }
+        }
+        .b-c-title {
+            padding: 20px 0;
+            text-align: center;
+            h5 {
+                margin-bottom: 10px;
+            }
+            span {
+                color: $gray;
+            }
+        }
+    }
+}

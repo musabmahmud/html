@@ -1,0 +1,49 @@
+.testimonial-area {
+    background-image: url(../images/ser-backgound.jpg);
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    .custom-testi {
+        @include res(m768) {
+            margin: 50px auto;
+        }
+        .owl-dots {
+            display: none;
+        }
+        .testi-card {
+            text-align: center;
+            .testi-img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                display: inline-block;
+                border: 2px solid $back-color;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .testi-des {
+                max-width: 500px;
+                margin: 20px auto;
+                i {
+                    color: $back-color;
+                }
+            }
+            .testi-info {
+                h5 {
+                    color: $g-color;
+                }
+                span {
+                    display: block;
+                    margin: 10px auto;
+                }
+                .testi-rating {
+                    i {
+                        color: gold;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.header-background {
+    background-image: url('../images/background/2.jpeg');
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 600px;
+    margin-top: 90px;
+    @include res(m768) {
+        margin-top: 0;
+        height: 100%;
+    }
+    .h-area {
+        display: table;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        .h-title {
+            display: table-cell;
+            text-align: left;
+            vertical-align: middle;
+            justify-content: center;
+            text-transform: uppercase;
+            color: #fff!important;
+            .header-text {
+                color: #fff!important;
+                max-width: 50%;
+                @include res(m768) {
+                    padding: 100px 20px;
+                    max-width: 100%;
+                    text-align: center;
+                }
+                h1{
+                    color: #fff!important;
+                }
+                p {
+                    text-align: justify;
+                    line-height: 30px;
+                }
+                .ht-button {
+                    text-transform: capitalize;
+                    padding: 10px 20px;
+                    border: 1px solid #000000;
+                    border-radius: 50px;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

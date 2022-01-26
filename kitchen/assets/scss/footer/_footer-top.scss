@@ -1,0 +1,111 @@
+.footer-area {
+    background: url('../images/footer/footer_bg.png');
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::before {
+        content: '';
+        z-index: 0;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .8;
+    }
+}
+
+.footer-content {
+    p {
+        font-family: 'Poppins';
+        text-transform: capitalize;
+        color: #fff;
+        text-align: left;
+        span {
+            color: $header;
+        }
+    }
+    ul {
+        margin-top: 30px;
+        &.footer-list {
+            li {
+                color: $para;
+                font-family: 'Poppins';
+                text-transform: capitalize;
+                color: $para;
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                a {
+                    display: inline-block;
+                    color: #fff;
+                }
+                .f-icons {
+                    li {
+                        display: inline-flex;
+                        a {
+                            color: $para;
+                            margin-right: 15px;
+                            &:hover {
+                                color: #fff;
+                                @include transition;
+                            }
+                        }
+                    }
+                }
+            }
+            &.f-lsecond {
+                li {
+                    margin-bottom: 10px!important;
+                }
+            }
+            &.f-lthird {
+                margin-top: 55px;
+                li {
+                    text-transform: lowercase;
+                    color: #fff;
+                    margin-bottom: 15px!important;
+                    &.f-lclosed {
+                        text-transform: capitalize;
+                        color: $header;
+                    }
+                }
+            }
+        }
+    }
+    .footer-insta {
+        margin-top: 35px;
+        li {
+            display: inline-flex;
+            a {
+                margin-right: 15px;
+                margin-bottom: 15px;
+                img {
+                    width: 80px;
+                }
+                &:hover {
+                    transform: rotate(360deg);
+                    transition: .5s all ease-out;
+                }
+                @include res(m1200) {
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                    img {
+                        width: 60px;
+                    }
+                }
+                @include res(m768) {
+                    margin-right: 15px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

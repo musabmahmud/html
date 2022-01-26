@@ -1,0 +1,168 @@
+/**======================================================================
+=========================================================================
+Template Name: Website Template of Deliciosa Resturant
+Author: Md Musab Mahmud
+Email: md.musabmahmud7@gmail.com
+Whatsapp: +8801630858100
+supports: 
+File: style.css
+=========================================================================
+=========================================================================
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (default,core, link color, section etc)
+    2. Header area start here
+    3. About area start here
+    4. Blog area start here
+    5. Contact area start here
+    6. Covid area start here
+    7. Download area start here
+    8. EVENT area start here
+    9. Footer area start here
+    10. Menu area start here
+    11. News area start here
+    12. News Letter area start here
+    13. Notification area start here
+    14. Services area start here
+    15. Side bar area start here
+    16. team area start here
+    17. Video area start here
+    
+
+
+
+---------------------------------------*/
+
+
+/*....................................
+1.Theme default CSS
+....................................*/
+
+
+/*....................................
+1.1 core Theme default CSS
+....................................*/
+
+@import "core/con";
+
+/* ....................................
+1.2 default Theme default CSS
+.......................................*/
+
+@import "defaults/defaults";
+
+/* ....................................
+1.2 default Theme default CSS
+.......................................*/
+
+@import "mixings/mixins";
+
+/* ....................................
+1.3 Social Link Theme default CSS
+.......................................*/
+
+@import "social_link/social";
+
+/* ....................................
+2 Header Area Css
+.......................................*/
+
+@import "header/con";
+
+/* ....................................
+3 About Area Css
+.......................................*/
+
+@import "about/about";
+
+/* ....................................
+4 blog Area Css
+.......................................*/
+
+@import "blog/con";
+
+/* ....................................
+5 blog Area Css
+.......................................*/
+
+@import "blog/con";
+
+/* ....................................
+6 contact Area Css
+.......................................*/
+
+@import "contact/con";
+
+/* ....................................
+7 covic Area Css
+.......................................*/
+
+@import "covid/covid";
+
+/* ....................................
+8 Download Area Css
+.......................................*/
+
+@import "download/download";
+
+/* ....................................
+9 Event Area Css
+.......................................*/
+
+@import "event/event";
+
+/* ....................................
+10 Footer Area Css
+.......................................*/
+
+@import "footer/con";
+
+/* ....................................
+11 Main Menu Area Css
+.......................................*/
+
+@import "menu/menu";
+
+/* ....................................
+12 News Area Css
+.......................................*/
+
+@import "news/news";
+
+/* ....................................
+13 News Letter Area Css
+.......................................*/
+
+@import "newsletter/newsletter";
+
+/* ....................................
+14 Footer Area Css
+.......................................*/
+
+@import "notification/notification";
+
+/* ....................................
+15 service Area Css
+.......................................*/
+
+@import "services/services";
+
+/* ....................................
+16 Side Bar Area Css
+.......................................*/
+
+@import "sidebar/sidebar";
+
+/* ....................................
+17 team area Css
+.......................................*/
+
+@import "team/team";
+
+/* ....................................
+18 default Theme default CSS
+.......................................*/
+
+@import "video/video";

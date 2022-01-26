@@ -1,0 +1,36 @@
+.blog-area {
+    position: relative;
+    background: #fff;
+    .blog-title {
+        h2 {
+            text-align: left;
+            &:after {
+                left: 0;
+            }
+            &:before {
+                left: 0;
+            }
+        }
+    }
+    .blog-news {
+        .news-box {
+            @include res(m768) {
+                margin-bottom: 30px;
+            }
+            .blog-image {
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            .bb-caption {
+                text-transform: capitalize;
+                padding: 20px 0;
+                .bn-title {
+                    margin-top: 20px;
+                }
+                .bn-title {
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

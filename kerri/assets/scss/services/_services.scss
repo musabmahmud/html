@@ -1,0 +1,30 @@
+.service-body {
+    margin-top: 50px;
+    .service-box {
+        width: 100%;
+        border: 2px solid #e8e8e8;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 30px auto;
+        text-transform: capitalize;
+        .ser-box-icon {
+            font-size: 36px;
+            color: red;
+        }
+        h5 {
+            margin: 20px auto;
+        }
+        .box-underline {
+            margin: 20px auto;
+            height: 2px;
+            width: 50px;
+            transition: all 0.5s;
+            background: red;
+        }
+        &:hover {
+            .box-underline {
+                width: 80px;
+            }
+        }
+    }
+}

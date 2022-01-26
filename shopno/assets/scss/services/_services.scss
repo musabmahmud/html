@@ -1,0 +1,42 @@
+.service-area {
+    .service-card {
+        position: relative;
+        .service-item {
+            border: 1px solid #e6e6e6;
+            text-align: center;
+            padding: 50px;
+            border-radius: 5px;
+            transition: all 0.6s ease 0s;
+            i {
+                color: #000;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 48px;
+                transition: all ease 1s;
+                border: 1px solid #e6e6e6;
+            }
+            h5 {
+                color: #333;
+                margin: 20px auto;
+                text-transform: uppercase;
+            }
+            p {
+                text-transform: capitalize;
+                color: #333;
+                font-size: 12px;
+            }
+        }
+        &:hover {
+            .service-item {
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                transform: translateY(-10px);
+                i {
+                    background: #333;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.about-area {
+    .about-left {
+        .about-head {
+            color: $g-color;
+            text-transform: uppercase;
+        }
+        .about-text {
+            text-align: justify;
+            span {
+                text-transform: uppercase;
+                font-size: 20px;
+                display: block;
+            }
+        }
+    }
+    .about-right {
+        img{
+            min-width: 100%;
+        }
+    }
+}
